@@ -1,0 +1,47 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+  padding: 0px;
+  position: relative;
+}
+
+.container:after,
+.container:before {
+  display: table;
+}
+
+.container:after {
+  clear: both;
+}
+
+@media only screen and (min-width: 360px) and (max-width: 760px) {
+  .container {
+    width: 75%;
+  }
+}
+
+@media only screen and (min-width: 761px) and (max-width: 1370px) {
+  .container {
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .container {
+    width: 75%;
+  }
+}
+
+@media only screen and (min-width: 1371px) {
+  .container {
+    width: 80%;
+  }
+}

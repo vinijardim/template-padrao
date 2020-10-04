@@ -1,0 +1,137 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+}
+
+.barra_menu li {
+  float: left;
+}
+
+/* HEADER */
+
+.bg_topo {
+  background: #020183;
+  color: white;
+}
+
+/* HEADER - MENU */
+
+.barra_menu a {
+  color: #b6b6b6;
+}
+
+.submenu1 {
+  background-color: #020183;
+}
+
+.submenu1 a {
+  color: #ffffff;
+}
+
+.submenu2 {
+  background-color: #020183;
+}
+
+.submenu2 a {
+  color: #ffffff;
+}
+
+.menu_abrir,
+.menu_fechar {
+  background: none;
+  border: 0;
+  outline: 0;
+  -webkit-appearance: none;
+  font-size: 1.6em;
+  text-indent: -999em;
+}
+
+.menu_abrir {
+  float: top;
+  height: 0;
+  width: 0.75em;
+  padding-top: 0.125em;
+  border-top: 0.4em double #000;
+  border-bottom: 0.14em solid #000;
+  margin-top: 1em;
+}
+
+.menu_fechar {
+  position: relative;
+  height: 1em;
+  width: 1em;
+}
+
+.menu_fechar:before {
+  content: "\00D7";
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-indent: 0;
+}
+/* MAIN - PRINCIPAL */
+
+.principal_slides {
+  background: #d1d1d1;
+}
+
+.principal .texto {
+  color: #9b9b9b;
+}
+
+.principal .texto h1 {
+  color: #8b8b8b;
+}
+
+.principal .texto p {
+  color: #9b9b9b;
+}
+
+.principal .texto ul {
+  color: #9b9b9b;
+}
+
+/* RODAPE */
+
+.rodape {
+  background: #454545;
+  color: white;
+}
+
+/* JS - SLIDES*/
+
+.js [data-slide] {
+  position: relative;
+}
+.js [data-slide] > * {
+  position: absolute;
+  top: 0px;
+  opacity: 0;
+}
+.js [data-slide] > .active {
+  position: relative;
+  opacity: 1;
+  transition: opacity 1000ms;
+}
+
+[data-slide-nav] {
+  display: block;
+  justify-content: center;
+  text-align: center;
+  margin-top: 0.3em;
+}
+[data-slide-nav] > button {
+  display: inline-block;
+  width: 0.4em;
+  margin: 0.3em 0.1em;
+  height: 0.35em;
+  border: none;
+  padding: 0em;
+  border-radius: 0.6em;
+  background: #1d1d1d;
+  text-indent: -100em;
+  overflow: hidden;
+}
+[data-slide-nav] > button.active {
+  background: grey;
+}
